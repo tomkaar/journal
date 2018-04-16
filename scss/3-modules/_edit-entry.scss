@@ -1,0 +1,26 @@
+.edit-entry{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &.open{
+    display: block;
+  }
+
+  .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  .wrapper{
+    position: relative;
+    padding: 2rem;
+    background: white;
+    overflow: auto;
+  }
+}

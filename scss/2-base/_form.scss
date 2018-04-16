@@ -1,0 +1,28 @@
+.form{
+
+  input{
+    margin: 0.2rem 0;
+    padding: 0.2rem 0;
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid $color-light-grey;
+  }
+
+  input[type="submit"]{
+    cursor: pointer;
+
+    &:hover{
+      color: $color-white;
+      background: $color-brand;
+      border: 1px solid $color-brand;
+    }
+  }
+
+  textarea{
+    margin: 0.2rem 0;
+    padding: 0.2rem 0;
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid $color-light-grey;
+  }
+}
