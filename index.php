@@ -29,6 +29,6 @@ if (isset($_GET["message"])) {
   }
 ?>
 
-</div> <!-- wrapper end -->
+</div>
 
 <?php require 'partials/footer.php'; ?>

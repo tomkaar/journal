@@ -37,10 +37,11 @@ class Entry
 
   public function removeEntry($entryID){
     $statement = $this->db->prepare(
-      "DELETE FROM entries WHERE entryID = :entryID"
+      "DELETE FROM entries WHERE entryID = :entryID && userID = :userID"
     );
     $statement->execute([
-      ":entryID" => $entryID
+      ":entryID" => $entryID,
+      ":userID" => $_SESSION["userID"]
     ]);
   }
 
@@ -60,12 +61,13 @@ class Entry
 
   public function updateEntry($title, $content, $entryID){
     $statement = $this->db->prepare(
-      "UPDATE entries SET title = :title, content = :content WHERE entryID = :entryID"
+      "UPDATE entries SET title = :title, content = :content WHERE entryID = :entryID && userID = :userID"
     );
     $statement->execute([
       ":title" => $title,
       ":content" => $content,
-      ":entryID" => $entryID
+      ":entryID" => $entryID,
+      ":userID" => $_SESSION["userID"]
     ]);
   }
 }

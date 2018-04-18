@@ -1,4 +1,5 @@
 .form{
+  width: 100%;
 
   input{
     margin: 0.2rem 0;
@@ -9,6 +10,7 @@
   }
 
   input[type="submit"]{
+    margin: 0 0 0.5rem 0;
     cursor: pointer;
 
     &:hover{
@@ -16,6 +18,11 @@
       background: $color-brand;
       border: 1px solid $color-brand;
     }
+  }
+  input[type="submit"].form-50{
+    width: calc(50% - 0.4rem);
+    margin: 0.5rem 0.2rem 0 0.2rem;
+    float: left;
   }
 
   textarea{
