@@ -1,6 +1,12 @@
-<div class="greeting">
-  <h2 class="big-title">Welcome, <?= $_SESSION["username"] ?>!</h2>
-  <form class="form" action="partials/logout.php" method="post">
-    <input type="submit" name="" value="Logout">
-  </form>
+
+<div class="row greeting">
+  <div class="column">
+    <h2 class="ui header">Welcome, <?= $_SESSION["username"] ?>!</h2>
+    <form class="form" action="partials/logout.php" method="post">
+      <div class="field">
+        <label for="lohout">Logout: </label>
+        <input type="submit" name="" value="Logout" class="ui button">
+      </div>
+    </form>
+  </div>
 </div>

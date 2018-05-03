@@ -1,7 +1,7 @@
 <?php
 
 
-require_once '../partials/session_start.php';
+require_once 'session_start.php';
 require_once '../classes/DB.php';
 require_once '../classes/Entry.php';
 

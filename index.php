@@ -8,12 +8,12 @@ require_once 'classes/Entry.php';
 $user = new User();
 
 if (isset($_GET["message"])) {
-  echo "<div class='message'>" . $_GET["message"] . "</div>";
+  echo "<div class='ui blue large message'>" . $_GET["message"] . "</div>";
 }
 
 ?>
 
-<div class="wrapper">
+<div class="ui two column centered grid">
 
 <?php
   if($user->isLoggedIn())
@@ -21,7 +21,6 @@ if (isset($_GET["message"])) {
     require 'partials/view_greeting.php';
     require 'partials/view_new_entry.php';
     require 'partials/view_get_all_entries.php';
-    require 'partials/view_edit.php';
   }
   else
   {

@@ -1,12 +1,5 @@
-@import "1-tools/normalize";
-@import "1-tools/base";
-@import "1-tools/vars";
+@import "normalize";
+@import "base";
+@import "vars";
 
-@import "2-base/typography";
-@import "2-base/form";
-
-@import "3-modules/message";
-@import "3-modules/entries";
-@import "3-modules/greetings";
-@import "3-modules/new-entry";
-@import "3-modules/edit-entry";
+@import "modules";

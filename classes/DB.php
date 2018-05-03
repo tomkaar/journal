@@ -5,7 +5,7 @@ class DB
   private static $instance = null;
   private static $pdo;
 
-  // use DB2::connect to connect to DB
+  // use DB::connect to connect
   public static function connect(){
     // if instance is not set
       // set the instance + create $pdo connection by running construct

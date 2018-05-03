@@ -10,7 +10,7 @@
   $entry = $entries->getEntry($_POST["entryID"]);
 
 ?>
-<div class="wrapper">
+<div class="wrapper edit-entry">
   <h2>Edit Post</h2>
   <form class="form" action="update_post.php" method="POST">
     <input type="text" name="title" placeholder="Title" value="<?= $entry["title"] ?>">
